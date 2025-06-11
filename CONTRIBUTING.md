@@ -15,40 +15,7 @@ This guide covers the following:
 
 ---
 
-## ✅ Commit Message Format
 
-We follow the [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) standard to ensure clarity and automate release notes.
-
-```
-<type>(optional scope): short summary
-
-[optional body]
-
-[optional BREAKING CHANGE: ...]
-```
-
-### Common Types
-
-- `<span>feat</span>`: new feature (triggers a minor version bump)
-- `<span>fix</span>`: bug fix (triggers a patch bump)
-- `<span>docs</span>`: documentation updates
-- `<span>chore</span>`: tooling or infrastructure tasks
-- `<span>refactor</span>`: non-functional code changes
-- `<span>test</span>`: adding or updating tests
-
-### Examples
-
-- `<span>feat(engine): support joker wildcards</span>`
-- `<span>fix(policy): prevent out-of-range error</span>`
-- `<span>docs: update README with usage instructions</span>`
-
-> Use `<span>npm run commit</span>` (or `<span>git cz</span>`) to launch the interactive commit wizard.
-
-### Linting
-
-Commit messages are checked automatically. Invalid messages will fail local hooks or CI checks.
-
----
 
 ## 🚀 Getting Started
 
@@ -161,7 +128,40 @@ git branch --merged | grep -v "*" | xargs -I {} git branch -d {}
 ```
 
 ---
+## ✅ Commit Message Format
 
+We follow the [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) standard to ensure clarity and automate release notes.
+
+```
+<type>(optional scope): short summary
+
+[optional body]
+
+[optional BREAKING CHANGE: ...]
+```
+
+### Common Types
+
+- `<span>feat</span>`: new feature (triggers a minor version bump)
+- `<span>fix</span>`: bug fix (triggers a patch bump)
+- `<span>docs</span>`: documentation updates
+- `<span>chore</span>`: tooling or infrastructure tasks
+- `<span>refactor</span>`: non-functional code changes
+- `<span>test</span>`: adding or updating tests
+
+### Examples
+
+- `<span>feat(engine): support joker wildcards</span>`
+- `<span>fix(policy): prevent out-of-range error</span>`
+- `<span>docs: update README with usage instructions</span>`
+
+> Use `<span>npm run commit</span>` (or `<span>git cz</span>`) to launch the interactive commit wizard.
+
+### Linting
+
+Commit messages are checked automatically. Invalid messages will fail local hooks or CI checks.
+
+---
 ## ❓ Frequently Asked Questions
 
 | Question                                        | Answer                                                                                                |
