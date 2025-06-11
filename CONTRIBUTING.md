@@ -53,15 +53,15 @@ git push --set-upstream origin feat/engine-legal-checks
 
 | Remote                  | URL (example)                                            | Purpose                                          |
 | ----------------------- | -------------------------------------------------------- | ------------------------------------------------ |
-| `<span>upstream</span>` | `<span>git@github.com:acme-org/guandan-ai.git</span>`    | Canonical repository where releases are tagged   |
-| `<span>origin</span>`   | `<span>git@github.com:<your-user>/guandan-ai.git</span>` | Your personal fork, where you push work branches |
+| `upstream` | `https://github.com/Do-not-be-afraid-to-be-knonwn/GuanDan-AIbot.git`    | Canonical repository where releases are tagged   |
+| `origin`   | `git@github.com:<your-user>/GuanDan-AIbot.git` | Your personal fork, where you push work branches |
 
 ```
 # one‑time setup
-git clone git@github.com:acme-org/guandan-ai.git
+git clone https://github.com/Do-not-be-afraid-to-be-knonwn/GuanDan-AIbot.git
 cd guandan-ai
 git remote rename origin upstream
-git remote add origin git@github.com:<your-user>/guandan-ai.git
+git remote add origin git@github.com:<your-user>/GuanDan-AIbot.git
 ```
 
 ---
